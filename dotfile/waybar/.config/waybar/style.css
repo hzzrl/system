@@ -1,0 +1,57 @@
+* {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+    transition: none;
+}
+
+window#waybar {
+    background-color: #0c1428;
+}
+
+.modules-left {
+    margin-left: -2px;
+}
+
+.modules-right {
+    margin-right: -2px;
+}
+
+#backlight,
+#battery,
+#clock,
+#mode,
+#mpris,
+#tray,
+#wireplumber,
+#workspaces button {
+    background-color: #3c4860;
+    background-image: none;
+    color: #b0c0d8;
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 2px;
+    padding: 8px;
+}
+
+#workspaces button.focused {
+    background-color: #748098;
+    color: #0c1428;
+}
+
+#workspaces button.urgent {
+    background-color: #b0c0d8;
+    color: #3c4860;
+}
+
+#battery.warning:not(.charging) {
+    background-color: #748098;
+    color: #0c1428;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #b0c0d8;
+    color: #0c1428;
+}

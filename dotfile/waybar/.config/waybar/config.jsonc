@@ -1,0 +1,83 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 0,
+  "margin": "32 32 -16 32",
+  "spacing": 0,
+  "reload_style_on_change": true,
+  "modules-left": [
+    "sway/workspaces",
+    "sway/mode"
+  ],
+  "modules-center": [
+    "mpris"
+  ],
+  "modules-right": [
+    "tray",
+    "wireplumber",
+    "backlight",
+    "battery",
+    "clock"
+  ],
+  "sway/workspaces": {
+    "format": "{name}",
+    "disable-scroll-wraparound": true,
+    "enable-bar-scroll": true,
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": []
+    }
+  },
+  "sway/mode": {
+    "format": "MOD {}",
+    "tooltip": false
+  },
+  "mpris": {
+    "format": "MED {status} [{player}] {dynamic}",
+    "format-playing": "MED PLAY [{player}] {dynamic}",
+    "format-paused": "MED PAUS [{player}] {dynamic}",
+    "format-stopped": "MED STBY [{player}] {dynamic}",
+    "tooltip": false,
+    "title-len": 16,
+    "artist-len": 16,
+    "dynamic-order": [
+      "title",
+      "artist"
+    ],
+    "dynamic-separator": " by ",
+    "on-scroll-up": "playerctld unshift",
+    "on-scroll-down": "playerctld shift"
+  },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 8
+  },
+  "wireplumber": {
+    "format": "VOL {volume:>3}%",
+    "format-muted": "MUT {volume:>3}%",
+    "scroll-step": 5.0,
+    "tooltip": false
+  },
+  "backlight": {
+    "format": "BRT {percent:>3}%",
+    "tooltip": false,
+    "on-scroll-up": "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-"
+  },
+  "battery": {
+    "format": "BAT {capacity:>3}%",
+    "format-charging": "CHG {capacity:>3}%",
+    "format-plugged": "EXT {capacity:>3}%",
+    "tooltip": false,
+    "states": {
+      "warning": 20,
+      "critical": 10
+    }
+  },
+  "clock": {
+    "format": "{:%a %b %d  %H:%M}",
+    "tooltip": false
+  }
+}
