@@ -1,35 +1,12 @@
-[window]
-padding = { x = 16, y = 16 }
-
-[font]
-size = 16.0
-
-[font.normal]
-family = "Noto Sans Mono"
-style = "Regular"
-
 [colors.primary]
-foreground = "#e6e0e9"
-background = "#141218"
-dim_foreground = "#cac4d0"
-bright_foreground = "None"
-
-[colors.search.matches]
-foreground = "#492532"
-background = "#efb8c8"
-
-[colors.search.focused_match]
-foreground = "#381e72"
-background = "#d0bcff"
-
-[colors.hints.start]
-foreground = "#381e72"
-background = "#d0bcff"
-
-[colors.hints.end]
-foreground = "#492532"
-background = "#efb8c8"
-
-[colors.footer_bar]
-foreground = "#322f35"
-background = "#e6e0e9"
+background="#0c1428"
+bright_foreground="#748098"
+dim_foreground="#3c4860"
+foreground="#b0c0d8"
+[font]
+size=16
+[font.normal]
+family="Noto Sans Mono"
+style="Regular"
+[window]
+padding={x=16,y=16}

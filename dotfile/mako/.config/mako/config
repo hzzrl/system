@@ -1,14 +1,13 @@
-font=Noto Sans Mono 16
-width=400
-height=400
-margin=32
-padding=16
-border-size=2
+background-color=#0c1428ff
+border-color=#b0c0d8ff
 border-radius=0
+border-size=2
+font=Noto Sans Mono 16
+format=<i>%a</i>\n<b>%s</b>\n\n%b
+height=400
 icons=0
-format=%a\n%s\n%b
-
-background-color=#2B2930FF
-text-color=#E6E0E9FF
-border-color=#938F99FF
-progress-color=over #D0BCFFFF
+margin=48
+padding=16
+progress-color=over #3c4860ff
+text-color=#b0c0d8ff
+width=400
